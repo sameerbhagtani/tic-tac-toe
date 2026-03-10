@@ -1,0 +1,144 @@
+/* Overriden Classes */
+
+.btn {
+    background-color: var(--blue);
+    box-shadow: 0px 5px 0px 1px var(--light-blue);
+
+    font-size: 2rem;
+
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.container {
+    background-color: var(--bg-body);
+    box-shadow: 0px 0px;
+}
+
+/* ========================================================================= */
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.top .btn {
+    height: 60px;
+
+    cursor: default;
+
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0px 5px 0px 1px var(--light-secondary);
+}
+.top .not-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.top .btn#level {
+    font-size: 1.5rem;
+
+    text-align: center;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+        box-shadow: 0px 5px 0px 1px var(--light-primary);
+    }
+
+    &:focus {
+        background-color: var(--secondary);
+        color: var(--primary);
+        box-shadow: 0px 5px 0px 1px var(--light-secondary);
+    }
+}
+
+.top .btn-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+        box-shadow: 0px 5px 0px 1px var(--light-primary);
+    }
+}
+
+.top .btn-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+        box-shadow: 0px 5px 0px 1px var(--light-primary);
+    }
+}
+
+/* ========================================================================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.grid .btn {
+    width: 100px;
+    height: 100px;
+
+    font-size: 3rem;
+}
+
+/* ========================================================================= */
+
+.hud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hud .btn {
+    width: 100px;
+    height: 70px;
+
+    font-size: 1.2rem;
+
+    color: var(--primary);
+
+    cursor: default;
+}
+
+.hud .btn-XScore {
+    background-color: var(--X);
+    box-shadow: 0px 5px 0px 1px var(--light-X);
+}
+
+.hud .btn-draws {
+    background-color: var(--secondary);
+    box-shadow: 0px 5px 0px 1px var(--light-secondary);
+}
+
+.hud .btn-OScore {
+    background-color: var(--O);
+    box-shadow: 0px 5px 0px 1px var(--light-O);
+}

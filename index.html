@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" href="./styles/general.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <script defer src="./scripts/index.js"></script>
+    </head>
+    <body>
+        <div class="container roboto-font">
+            <div class="title dilo-font">
+                <span class="X">X</span>
+                <span class="O">O</span>
+            </div>
+
+            <div class="picker">
+                <div>Pick your mark for games against CPU</div>
+                <div class="buttons">
+                    <button class="btn XO-btn-selected dilo-font X">X</button>
+                    <button class="btn XO-btn-unselected dilo-font O">O</button>
+                </div>
+                <div>Remember X goes first</div>
+            </div>
+
+            <div class="game-buttons">
+                <a href="./pages/player.html"><button class="btn player-btn roboto-font">NEW GAME (vs PLAYER)</button></a>
+                <a href="./pages/cpu.html"><button class="btn cpu-btn roboto-font">NEW GAME (vs CPU)</button></a>
+            </div>
+        </div>
+    </body>
+</html>

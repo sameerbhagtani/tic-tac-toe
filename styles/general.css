@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --body-bg: #050505;
+
+    --container-bg: #1a236bc3;
+    --light-container-bg: #1a236b7c;
+
+    --O: #50b2c0;
+    --light-O: #50b1c07c;
+
+    --X: #ff4000;
+    --light-X: #ff40007c;
+
+    --primary: white;
+    --light-primary: #ffffff7c;
+
+    --secondary: #201e1f;
+    --light-secondary: #201e1f7c;
+
+    --blue: #1a236b;
+    --light-blue: #1a236b7c;
+}
+
+@font-face {
+    font-family: "Dilo World";
+    src: url("../assets/fonts/DiloWorld.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--body-bg);
+
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--container-bg);
+    box-shadow: 7px 10px 0px 1px var(--light-container-bg);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    width: clamp(320px, 80vw, 800px);
+
+    padding: 20px 10px;
+
+    text-align: center;
+}
+
+.X {
+    color: var(--X);
+}
+
+.O {
+    color: var(--O);
+}
+
+.X-ready {
+    color: transparent;
+
+    -webkit-text-stroke: 2px var(--X);
+}
+
+.O-ready {
+    color: transparent;
+
+    -webkit-text-stroke: 2px var(--O);
+}
+
+.X-win {
+    background-color: var(--primary) !important;
+    box-shadow: 0px 5px 0px 1px var(--X) !important;
+}
+
+.O-win {
+    background-color: var(--primary) !important;
+    box-shadow: 0px 5px 0px 1px var(--O) !important;
+}
+
+.draw {
+    background-color: var(--container-bg) !important;
+}
+
+.dilo-font {
+    font-family: "Dilo World", "Comic Sans MS", sans-serif;
+    text-transform: uppercase;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn {
+    border: none;
+
+    padding: 3px;
+
+    cursor: pointer;
+}

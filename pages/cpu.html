@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+        <link rel="stylesheet" href="../styles/general.css" />
+        <link rel="stylesheet" href="../styles/cpu.css" />
+        <script defer src="../scripts/cpu.js"></script>
+        <script defer src="../scripts/minimax.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <select name="level" id="level" class="btn">
+                    <option>Beginner</option>
+                    <option selected>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <div class="not-select">
+                    <a href="../index.html">
+                        <button class="btn btn-home"><i class="fa-solid fa-house"></i></button>
+                    </a>
+
+                    <button class="btn roboto-font" disabled><span class="X turn-text dilo-font">X</span> 's turn</button>
+
+                    <button class="btn btn-reset">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid">
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+                <button class="btn dilo-font"></button>
+            </div>
+
+            <div class="hud">
+                <button class="btn btn-XScore roboto-font" disabled>X Score :<br /><span class="XScoreVal">0</span></button>
+                <button class="btn btn-draws roboto-font" disabled>Draws :<br /><span class="drawVal">0</span></button>
+                <button class="btn btn-OScore roboto-font" disabled>O Score:<br /><span class="OScoreVal">0</span></button>
+            </div>
+        </div>
+    </body>
+</html>
