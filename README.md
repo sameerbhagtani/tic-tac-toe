@@ -1,4 +1,4 @@
-# 🎮️ Tic Tac Toe (JavaScript)
+# 🎮️ Tic Tac Toe
 
 A simple and modern **Tic Tac Toe game built with HTML, CSS, and JavaScript** featuring a clean dark theme, score tracking, and both **single-player and two-player modes**.
 
